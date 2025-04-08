@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalles del Producto</title>
+  <link rel="stylesheet" href="../css/detail.css" />
+</head>
+<body>
+    <div class="menu">
+        <img src="../storage/img/perfilicon.jpeg" width="100px" height="100px">
+        <p>INFINITE</p>
+        <a href="#">Categorias</a>
+        <a href="#">Carrito</a>
+    </div>
+  <div class="container">
+    <div class="product-detail">
+      <div class="product-image">
+        <img src="../storage/img/animepants.jpeg">
+      </div>
+
+      <div class="product-info">
+        <button><a  href="../index.html"> volver a el inicio </a></button>
+        <h1 class="product-title"> Pantalones sasuke (Naruto) </h1>
+        <div class="rating">5.0⭐</div>
+
+        <div class="counter">
+          <button class="btn-minus">➖</button>
+          <span class="quantity">1</span>
+          <button class="btn-plus">➕</button>
+        </div>
+
+        <p class="description">
+           Pantalones a la moda edicion ...
+        </p>
+
+        <button class="read-more-btn">Leer más </button>
+
+        <div class="selectors">
+          <div class="size-selector">
+            <h3>Tallas</h3>
+            <div class="items">
+              <div class="size">S</div>
+              <div class="size">M</div>
+              <div class="size">L</div>
+              <div class="size">XL</div>
+            </div>
+          </div>
+
+          <div class="color-selector">
+            <h3>Colores</h3>
+            <div class="colors">
+              <div class="color" style="background-color: #000;"></div>
+              <div class="color" style="background-color: #2c3e50;"></div>
+              <div class="color" style="background-color: #3a3636;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="add-to-cart">
+          <a href="../views/checkout.html"> Añadir al Carrito 🛒 </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <dialog id="readMoreModal">
+    <h2>Informacion detallada</h2>
+    <p>
+        limitada de pantalones sasuke, edicion especial, solo 100 unidades disponibles.
+    </p>
+    <button id="closeModal">Cerrar</button>
+  </dialog>
+
+  <script src="../js/detail.js"></script>
+</body>
+</html>

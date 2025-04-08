@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+    <header>
+        </button>
+        <h1>Carrito</h1>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Categoria</a></li>
+                    <li><a href="#">Carrito</a></li>
+                </ul>
+            </div>
+        </nav>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="products-section">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../storage/img/animebag.jpeg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-info">
+                            <h3> one piece bag</h3>
+                            <p class="product-description">merch bag</p>
+                            <p class="product-price">$28.000</p>
+                        </div>
+                        <button class="more-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="12" cy="5" r="1"></circle>
+                                <circle cx="12" cy="19" r="1"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn decrease" data-id="1">-</button>
+                        <span class="quantity" data-id="1">4</span>
+                        <button class="quantity-btn increase" data-id="1">+</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../storage/img/animepants.jpeg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-info">
+                            <h3>Sasuke Pants</h3>
+                            <p class="product-description">pants</p>
+                            <p class="product-price">$58.000</p>
+                        </div>
+                        <button class="more-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="12" cy="5" r="1"></circle>
+                                <circle cx="12" cy="19" r="1"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn decrease" data-id="2">-</button>
+                        <span class="quantity" data-id="2">1</span>
+                        <button class="quantity-btn increase" data-id="2">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout-section">
+                <div class="payment-info">
+                    <h2>Informacion de compra</h2>
+                    <div class="payment-method">
+                        <div class="card-info">
+                            <span class="card-type">VISA</span>
+                            <span class="card-number">•••• •••• •••• 2143</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <div class="summary-row">
+                        <span>Total (9 articulos)</span>
+                        <span id="total-price">$260.000</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Descuento</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total a pagar</span>
+                        <span id="sub-total">$260.000</span>
+                    </div>
+                </div>
+
+                <button class="pay-button">Pagar</button>
+            </div>
+        </div>
+    </main>
+    <script src="../js/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
